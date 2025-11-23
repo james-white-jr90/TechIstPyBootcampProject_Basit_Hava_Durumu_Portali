@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="tr"><head><meta charset="UTF-8"><title>Sonuç</title></head>
+<body>
+{% if error %}
+<h3>Hata oluştu! Şehir bulunamadı veya bağlantı hatası.</h3>
+{% else %}
+<h2>{{ weather.city }} Hava Durumu</h2>
+<p>Sıcaklık: {{ weather.temp }}°C</p>
+<p>Açıklama: {{ weather.description }}</p>
+{% endif %}
+<br><a href="/">Geri dön</a>
+</body></html>
